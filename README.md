@@ -1,27 +1,23 @@
-# Hw5
+## Задание 1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+Создайте приложение, в котором будет находиться три функциональные области:
+Home – отображение приветственного сообщения
+Products – работа со список продуктов
+Admin – управления продуктами (в данной версии приложения вывести сообщение, о том, что
+это главная страница админ части приложения)
 
-## Development server
+В app.component создайте меню из трех пунктов и настройте маршрутизацию таки образом,
+чтобы переход по ссылке направлял пользователя на соответствующий компонент,
+относящийся к его функциональной области.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Задание 2
 
-## Code scaffolding
+В приложении, созданном в первом задание, реализуйте шаблон Master/Details. Используйте сервис из предыдущего урока, для того чтобы получить доступ к списку продуктов (по необходимости модифицируйте сервис). 
+В главном компоненте отображайте только названия продуктов, 
+при клике по продукту, перенаправляйте пользователя на компонент, 
+который будет показывать детали выбранного продукта.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Задание 3
+Проведите рефакторинг кода задания 2 и примените дочерние маршруты для отображения
+деталей выбранного продукта. Детали отображайте под списком всех продуктов в одном
+представлении.
