@@ -4,6 +4,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 
 import { ProductRoutingModule } from './product-routing.module';
+import { ProductHomeComponent } from './product-home/product-home.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { ProductRoutingModule } from './product-routing.module';
   ],
   declarations: [
     ProductDetailsComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductHomeComponent
   ]
 })
 

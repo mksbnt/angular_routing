@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
-import { ProductModule } from './products/product.module';
+import { ProductHomeComponent } from './products/product-home/product-home.component';
 
 @NgModule({
   imports: [RouterModule.forRoot([
@@ -18,9 +18,6 @@ import { ProductModule } from './products/product.module';
     {
       path: 'admin', component: AdminComponent
     },
-    // {
-    //   path: 'products', component ProductModule
-    // }
   ])],
   exports: [RouterModule]
 })

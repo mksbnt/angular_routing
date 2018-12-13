@@ -1,7 +1,30 @@
-<div *ngIf="product">
-<h2>Selected product</h2>
-CID: {{product.id}}
-Name: {{product.name}}
-
-<button (click)="goToProductList()">Go Back</button>
-</div>
+<table *ngIf="product" class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Selected chemical agent</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CID</td>
+      <td>{{ product.id }}</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>{{ product.name }}</td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td>{{ product.category }}</td>
+    </tr>
+    <tr>
+      <td>Rate</td>
+      <td>{{ product.currentRate }}</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>{{ product.price }}</td>
+    </tr>
+  </tbody>
+</table>
