@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-
 import { Product } from './product';
-// import { PRODUCTS } from './products';
 
 let products = [
   new Product(6325, 'Ethylene', 100, 1, 2),
@@ -32,4 +30,3 @@ export class ProductService {
       .then(products => products.find(x => x.id == id));
   }
 }
-

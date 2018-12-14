@@ -1,22 +1,19 @@
 <div class="container">
   <div class="row">
     <div class="col-6">
-        <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Сhemical agents</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let product of products"
-              (click)="onSelect(product)">
-                 <td>{{product.name}}</td>
-              </tr>
-            </tbody>
-          </table>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Сhemical agents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products" (click)="onSelect(product)">
+            <td>{{ product.name }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="col-6">
-        <router-outlet></router-outlet>
-    </div>
+    <div class="col-6"><router-outlet></router-outlet></div>
   </div>
 </div>
